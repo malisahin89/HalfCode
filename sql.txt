@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `tasarim` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Baslik` varchar(250) NOT NULL,
+  `icerik` text CHARACTER SET utf32 NOT NULL,
+  `sef` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `Baslik` (`Baslik`),
+  KEY `Baslik_2` (`Baslik`),
+  KEY `Baslik_3` (`Baslik`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;

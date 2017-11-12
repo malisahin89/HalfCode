@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+	<title>Belge Oluşturucu</title>
+	<link rel="stylesheet" type="text/css" href="cssjs/stil.css">
+	<script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+<script src="ckeditor/ckeditor.js"></script>
+<div id="resize">
+</div>
+<div id="envelope">
+<header>
+    <h2>BLOG</h2>
+</header>
+<hr>
+
+<form action="kaydet.php" method="post"> 
+
+<label>YAZI(BÖLÜM)</label>
+<select size="1" name="bolum"  onChange="this.options[this.selectedIndex].value;">
+<option value="genel/">Genel</option>
+<option value="telefon/">Telefon</option>
+<option value="bilgisayar/">Bilgisayar</option>
+</select>
+BÖLÜMÜNE YAZILSIN
+<br><br>
+
+	<label>SAYFA İSMİ(LİNK)</label>
+	<input type="text" name="isim" placeholder="Sayfa İsmini buraya yazın" width="100px;">
+		
+    <label>BAŞLIK(TİTLE)</label>
+	<input type="text" name="baslik" placeholder="Başlığı buraya yazın" width="100px;">
+	
+	<label>SAYFA BAŞLIK</label>
+	<input type="text" name="sayfabaslik" placeholder="Sayfa başlığını buraya yazın">		
+	
+	<label>İÇERİK</label>
+	            <textarea name="icerik" id="editor1">
+                İçerik
+            </textarea>
+            <script>
+                CKEDITOR.replace( 'editor1' );
+            </script>
+	
+	<input type="submit" value="Oluştur :)" id="submit">		
+</form>
+<br>
+<hr/>
+<center><text style="font-family: 'Roboto Slab', serif; color: blue;">BLOG</text></center>
+<hr/>
+</div>
+</body>
+</html>
